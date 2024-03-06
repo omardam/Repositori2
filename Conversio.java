@@ -14,12 +14,33 @@ public class Conversio {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        double tipus_de_canvi = 0;
 
-        System.out.println("Introdueix en £");
-        int valor_lliuras = sc.nextInt();
+        System.out.println("[1 = LIBRA A EURO] ");
+        System.out.println("[2 = EURO A LIBRA] ");
+        String decision = sc.nextLine();
 
-        double tipus_de_canvi = 1.17d;
-        System.out.println(valor_lliuras + " lliuras (£) actualment equivalen a" + (valor_lliuras * tipus_de_canvi) + " euros (€)");
+        switch (decision) {
+            case "1":
+                System.out.println("Introdueix en £");
+                int valor_lliuras = sc.nextInt();
+
+                tipus_de_canvi = 1.17d;
+                System.out.println(valor_lliuras + " lliuras (£) actualment equivalen a"
+                        + (valor_lliuras * tipus_de_canvi) + " euros (€)");
+                break;
+            case "2":
+                System.out.println("Introdueix en €");
+                int valor_euros = sc.nextInt();
+
+                tipus_de_canvi = 1.15d;
+                System.out.println(valor_euros + " euros (€) actualment equivalen a"
+                        + (valor_euros * tipus_de_canvi) + " lliuras (£)");
+                break;
+                default:
+                System.out.println("Escribe una opcion valida.");
+        }
+
     }
 
 }
