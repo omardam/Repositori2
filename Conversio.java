@@ -19,7 +19,7 @@ public class Conversio {
         int valor_lliuras = sc.nextInt();
 
         double tipus_de_canvi = 1.17d;
-        System.out.println(valor_lliuras + " lliuras (£) acatualmentt ewuivalen a" + (valor_lliuras * tipus_de_canvi) + " euros (€)");
+        System.out.println(valor_lliuras + " lliuras (£) actu3alment ewuivalen a" + (valor_lliuras * tipus_de_canvi) + " euros (€)");
     }
 
 }
